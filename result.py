@@ -1,27 +1,17 @@
-total = 0
-count = 0
+marks = int(input("Enter Marks: "))
 
-while True:
-    marks = input("Enter marks (or stop): ")
+if marks >= 90:
 
-    if marks == "stop":
-        break
+    print("Grade A")
 
-    marks = int(marks)
-    total = total + marks
-    count = count + 1
+elif marks >= 75:
 
-if count > 0:
-    avg = total / count
-    print("Average =", avg)
+    print("Grade B")
 
-    if avg >= 90:
-        print("Grade: A+")
-    elif avg >= 75:
-        print("Grade: A")
-    elif avg >= 60:
-        print("Grade: B")
-    else:
-        print("Grade: C")
+elif marks >= 60:
+
+    print("Grade C")
+
 else:
-    print("No data entered")
+
+    print("Grade D")
