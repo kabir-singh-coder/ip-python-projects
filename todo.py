@@ -1,31 +1,38 @@
 todo = []
 
 while True:
-    print("\n1.Add Task  2.View Tasks  3.Remove Task  4.Exit")
-    ch = input("Choice: ")
+
+    print("\n1.Add Task")
+    print("2.View Task")
+    print("3.Remove Task")
+    print("4.Exit")
+
+    ch = input("Enter Choice: ")
 
     if ch == "1":
-        task = input("Enter task: ")
+
+        task = input("Enter Task: ")
+
         todo.append(task)
-        print("Task added")
+
+        print("Task Added")
 
     elif ch == "2":
-        if len(todo) == 0:
-            print("No tasks")
-        else:
-            for i in range(len(todo)):
-                print(i+1, ".", todo[i])
+
+        print(todo)
 
     elif ch == "3":
-        num = int(input("Enter task number to remove: "))
-        if num <= len(todo):
-            todo.pop(num-1)
-            print("Task removed")
-        else:
-            print("Invalid number")
+
+        task = input("Enter Task To Remove: ")
+
+        todo.remove(task)
+
+        print("Task Removed")
 
     elif ch == "4":
+
         break
 
     else:
-        print("Wrong choice")
+
+        print("Wrong Choice")
