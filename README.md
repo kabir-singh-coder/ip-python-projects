@@ -9,7 +9,6 @@ Informatics Practices (IP) syllabus.
 - if-else
 - while loops
 - Lists
-- Real-life logic
 
 ## Projects Included
 1. Smart Calculator
@@ -18,6 +17,3 @@ Informatics Practices (IP) syllabus.
 4. Student Result Analyzer
 5. Login System
 
-## Note
-No advanced libraries or functions are used.
-All logic is written using basic syntax.
